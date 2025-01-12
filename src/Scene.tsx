@@ -3,7 +3,6 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useRef, useLayoutEffect } from "react";
 import * as THREE from "three";
 import { useCustomScroll } from "./ScrollContext";
-import React from "react";
 
 export default function Scene() {
   const { animations, scene } = useGLTF("/minecraft_loop.glb");

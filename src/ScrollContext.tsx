@@ -53,7 +53,6 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({
 
     const animate = () => {
       const currentTime = performance.now();
-      const delta = (currentTime - lastTime.current) / 1000;
       lastTime.current = currentTime;
 
       // Apply velocity with configurable decay
